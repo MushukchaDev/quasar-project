@@ -21,7 +21,7 @@
                 </q-item-actions>
             </q-item>
         </q-card-section>
-    </q-card>
+    </q-card>f
     <q-card class="q-my-lg" style="max-width: 400px; max-height: 250px">
         <q-card-section horizontal>
             <q-card-section class="bg-primary" style="width: 0.1px">
