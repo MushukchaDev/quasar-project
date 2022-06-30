@@ -1,8 +1,7 @@
 <template>
     <q-card class="q-my-lg" style="max-width: 400px; max-height: 250px">
         <q-card-section horizontal>
-            <q-card-section class="bg-primary" style="width: 0.1px">
-            </q-card-section>
+
             <q-item>
                 <q-item-section>
                     <div class="text-h6">Заметка в 16:26(понедельник)</div>

@@ -77,7 +77,7 @@
 
     <q-page-container>
       <q-page padding horizontal>
-        <InfoPanel />
+        <ZvonkiPanel />
       </q-page>
     </q-page-container>
   </q-layout>
@@ -90,19 +90,21 @@ import RashFiltr from './RashFiltr.vue'
 import DobavitKontact from './DobavitKontact.vue'
 import ContactPage from './ContactPage.vue'
 import InfoPanel from './InfoPanel.vue'
+import ZvonkiPanel from './Zvonki.vue'
 console.log(SpisokSobit)
 export default defineComponent({
   name: 'MainLayout',
-  components: { InfoPanel },
+  components: { ZvonkiPanel },
 
   setup() {
+
 
     return {
       model: ref(null),
       options2: [
         'Бренд-коуч'
       ],
-      drawer: ref(false)
+      drawer: ref(false),
     }
   }
 })
