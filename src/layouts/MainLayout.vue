@@ -30,21 +30,18 @@
         <q-list padding>
 
           <q-item clickable>
-
             <q-item-section active-class="q-item-no-link-highlighting">
               Журнал
             </q-item-section>
           </q-item>
 
           <q-item clickable>
-
             <q-item-section active-class="q-item-no-link-highlighting">
               Последний звонок
             </q-item-section>
           </q-item>
 
           <q-item clickable>
-
             <q-item-section active-class="q-item-no-link-highlighting">
               Контакты
             </q-item-section>
