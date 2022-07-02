@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="hHh lpR fFf" style="fullheight" class="shadow-2 rounded-borders fullpage">
+  <q-layout view="hHh lpR fFf" style="fullheight fullwidth" class="shadow-2 rounded-borders fullpage">
     <q-header elevated class="bg-white">
       <q-toolbar>
         <q-btn flat @click="drawer = !drawer" round dense icon="menu" class="text-dark"></q-btn>
@@ -10,7 +10,7 @@
       </q-toolbar>
     </q-header>
 
-    <q-footer elevated class="bg-grey-8">
+    <q-footer elevated class="bg-indigo-3">
       <div class="row justify-center">
         <div class="col-md-8">
           <q-btn size="md" padding="xs" icon="launch" />
@@ -74,7 +74,7 @@
 
     <q-page-container>
       <q-page padding horizontal>
-        <ZvonkiPanel />
+        <FormaSobit />
       </q-page>
     </q-page-container>
   </q-layout>
@@ -88,10 +88,13 @@ import DobavitKontact from './DobavitKontact.vue'
 import ContactPage from './ContactPage.vue'
 import InfoPanel from './InfoPanel.vue'
 import ZvonkiPanel from './Zvonki.vue'
+import FormaSobit from './FormaSobit.vue'
+import NomeraTel from './NomeraTel.vue'
+import DannieCont from './DannieCont.vue'
 console.log(SpisokSobit)
 export default defineComponent({
   name: 'MainLayout',
-  components: { ZvonkiPanel },
+  components: { FormaSobit },
 
   setup() {
 
