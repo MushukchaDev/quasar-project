@@ -21,7 +21,7 @@
         <q-select outlined v-model="modelMultiple2" multiple :options="tipi" dense stack-label options-dense use-chips
             label="Типы событий">
         </q-select>
-        <q-checkbox dense v-model="obrat_sort" label="Обратная сортировка" color="grey" />
+        <q-checkbox dense v-model="obrat_sort" label="Обратная сортировка" color="dark" />
         <q-select outlined v-model="model2" :options="vibrat" dense options-dense label="Выбрать">
         </q-select>
     </div>

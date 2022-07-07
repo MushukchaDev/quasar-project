@@ -1,8 +1,9 @@
+
 <template>
-  <q-layout view="hHh lpR fFf" style="fullheight fullwidth" class="shadow-2 rounded-borders fullpage">
-    <q-header elevated class="bg-white">
+  <q-layout view="hHh lpR fFf" style="fullheight fullwidth" class="fullpage bg-primary">
+    <q-header elevated class="bg-secondary">
       <q-toolbar>
-        <q-btn flat @click="drawer = !drawer" round dense icon="menu" class="text-dark"></q-btn>
+        <q-btn flat @click="drawer = !drawer" round dense icon="menu" class="text-black"></q-btn>
         <q-toolbar-title class="text-dark">
           <q-input borderless v-model="text" label="Часть имени" />
         </q-toolbar-title>
@@ -10,48 +11,64 @@
       </q-toolbar>
     </q-header>
 
-    <q-footer elevated class="bg-indigo-3">
+    <q-footer elevated class="bg-secondary">
       <div class="row justify-center">
         <div class="col-md-8">
-          <q-btn size="md" padding="xs" icon="launch" />
-          <q-btn size="md" padding="xs" icon="message" />
+          <q-btn class="bg-dark" size="md" padding="xs" icon="launch" />
+
+
+          <q-btn class="bg-dark" size="md" padding="xs" icon="message">
+            <q-menu>
+              <q-list dense style="min-width: 100px;">
+                <q-item clickable v-close-popup>
+                  <q-item-section>Whats up</q-item-section>
+                </q-item>
+                <q-item clickable v-close-popup>
+                  <q-item-section>SMS</q-item-section>
+                </q-item>
+                <q-item clickable v-close-popup>
+                  <q-item-section>Viber</q-item-section>
+                </q-item>
+              </q-list>
+            </q-menu>
+          </q-btn>
         </div>
 
         <div>
-          <q-btn size="md" padding="xs" icon="note" />
-          <q-btn size="md" padding="xs" icon="phone" />
-          <q-btn size="md" padding="xs" icon="add" />
+          <q-btn class="bg-dark" size="md" padding="xs" icon="note" />
+          <q-btn class="bg-dark" size="md" padding="xs" icon="phone" />
+          <q-btn class="bg-dark" size="md" padding="xs" icon="add" />
         </div>
       </div>
     </q-footer>
 
     <q-drawer v-model="drawer" show-if-above :width="200" :breakpoint="400">
-      <q-scroll-area style="height: calc(100% - 200px); margin-top: 200px;">
+      <q-scroll-area class="bg-dark-page" style="height: calc(100% - 200px); margin-top: 200px;">
         <q-list padding>
 
           <q-item clickable>
             <q-item-section active-class="q-item-no-link-highlighting">
-              Журнал
+              ЖУРНАЛ
             </q-item-section>
           </q-item>
 
           <q-item clickable>
             <q-item-section active-class="q-item-no-link-highlighting">
-              Последний звонок
+              ПОСЛЕДНИЙ ЗВОНОК
             </q-item-section>
           </q-item>
 
           <q-item clickable>
             <q-item-section active-class="q-item-no-link-highlighting">
-              Контакты
+              КОНТАКТЫ
             </q-item-section>
           </q-item>
 
-          <q-expansion-item label="Поиски">
+          <q-expansion-item label="ПОИСКИ">
             <q-list class="q-pl-lg">
               <q-item clickable active-class="q-item-no-link-highlighting">
                 <q-item-section>
-                  <q-item-label>Добавить</q-item-label>
+                  <q-item-label>ДОБАВИТЬ</q-item-label>
                 </q-item-section>
               </q-item>
             </q-list>
@@ -64,9 +81,9 @@
           <q-avatar size="56px" class="q-mb-sm">
             <img src="https://i.ibb.co/bzcmPP0/image.jpg">
           </q-avatar>
-          <div class="text-weight-bold text-dark">МАРИЯ ВЛАДИМИРОВНА</div>
+          <div class="text-weight-bold text-black">МАРИЯ ВЛАДИМИРОВНА</div>
           <div>
-            <q-select borderless dence options-dense v-model="model" :options="options2" />
+            <q-select borderless dense options-dense v-model="model" :options="options2" />
           </div>
         </div>
       </q-img>
@@ -74,7 +91,11 @@
 
     <q-page-container>
       <q-page padding horizontal>
-        <FormaSobit />
+        <div class="row">
+          <div class="col= 'col-12 col-xl-6'">
+            <DobavitKontact />
+          </div>
+        </div>
       </q-page>
     </q-page-container>
   </q-layout>
@@ -94,7 +115,7 @@ import DannieCont from './DannieCont.vue'
 console.log(SpisokSobit)
 export default defineComponent({
   name: 'MainLayout',
-  components: { FormaSobit },
+  components: { DobavitKontact },
 
   setup() {
 

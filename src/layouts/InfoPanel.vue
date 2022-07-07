@@ -1,5 +1,5 @@
 <template>
-    <q-card class="q-my-lg" style="max-width: 400px; max-height: 250px">
+    <q-card class="crm-panel q-my-lg" style="">
         <q-card-section horizontal>
 
             <q-item>
@@ -21,7 +21,7 @@
             </q-item>
         </q-card-section>
     </q-card>
-    <q-card class="q-my-lg" style="max-width: 400px; max-height: 250px">
+    <q-card class="q-my-lg">
         <q-card-section horizontal>
             <q-card-section class="bg-primary" style="width: 0.1px">
             </q-card-section>
