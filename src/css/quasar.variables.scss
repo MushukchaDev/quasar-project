@@ -14,15 +14,21 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
 $typography-font-family: 'Open Sans', sans-serif !default;
+$toolbar-min-height             : 59px !default;
+$button-font-size               : 12px !default;
+$button-push-border-radius      : 20px !default;
+$button-border-radius           : 2px !default;
 
-$primary   : #f1f3f6;
+
+$primary   : #21BA45;
 $secondary : #ffff;
-$accent    : #3498db;
+$accent    : #34495e;
 
-$dark      : #34495e;
+$dark      : #1d1d1d;
+//#34495e
 $dark-page : #fff;
 
-$positive  : #21BA45;
+$positive  : #f1f3f6;
 $negative  : #C10015;
-$info      : #31CCEC;
+$info      : #6a6c6f;
 $warning   : #ffb606;

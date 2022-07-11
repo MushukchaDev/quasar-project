@@ -1,13 +1,13 @@
 <template>
 
-    <div class="text-h5">Анастасия
+    <div class="text-h4 q-pa-lg">Анастасия
         <q-icon name="create" />
     </div>
-    <q-tabs v-model="tab" dense class="text-grey" :breakpoint="0" active-color="grey" indicator-color="grey"
+    <q-tabs v-model="tab" dense class="text-grey" :breakpoint="0" active-color="dark" indicator-color="dark"
         align="left">
-        <q-tab name="calls" :class="tab == 'calls' ? 'text-black' : ''" label="Звонки" />
-        <q-tab name="info" :class="tab == 'info' ? 'text-black' : ''" label="Информация" />
-        <q-tab name="tags" :class="tab == 'tags' ? 'text-black' : ''" label="Теги" />
+        <q-tab name="calls" :class="tab == 'calls' ? 'text-dark' : ''" label="Звонки" />
+        <q-tab name="info" :class="tab == 'info' ? 'text-dark' : ''" label="Информация" />
+        <q-tab name="tags" :class="tab == 'tags' ? 'text-dark' : ''" label="Теги" />
 
     </q-tabs>
 

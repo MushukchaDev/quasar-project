@@ -2,7 +2,7 @@
     <q-card class="my-card" flat square bordered>
         <div class="row">
             <div class=" col q-pt-sm q-pl-sm">
-                <q-input square outlined v-model="text" dense />
+                <q-input color="accent" square v-model="text" dense />
             </div>
             <div class=" col-1">
                 <p class="crm-center-word">
@@ -10,13 +10,13 @@
                 </p>
             </div>
             <div class=" col q-pt-sm q-pr-sm">
-                <q-input square outlined v-model="text" dense />
+                <q-input color="accent" square v-model="text" dense />
             </div>
         </div>
         <div class="row">
-            <q-card-actions class="flex q-px-lg">
-                <q-btn :ripple="false" unelevated color="indigo-9" label="Показать" no-caps />
-                <q-btn outline :ripple="false" unelevated color="indigo-9" label="Расширенный режим" no-caps />
+            <q-card-actions class="flex q-px-lg q-pt-sm">
+                <q-btn color="accent" :ripple="false" dense unelevated label="Показать" no-caps />
+                <q-btn class="text-dark" outline :ripple="false" dense unelevated label="Расширенный режим" no-caps />
             </q-card-actions>
         </div>
     </q-card>
@@ -27,7 +27,7 @@
                 <q-item-label>День</q-item-label>
             </q-item>
             <!--Первый пример-->
-            <q-item horizontal>
+            <q-item class="crm-list" horizontal>
                 <q-item-section avatar>
                     <q-icon class="text-weight-bolder" color="Navy" name="arrow_upward" />
                 </q-item-section>
@@ -40,7 +40,7 @@
 
             <!--Второй пример-->
             <q-separator size="0.5px" />
-            <q-item horizontal>
+            <q-item class="crm-list" horizontal>
                 <q-item-section avatar>
                     <q-icon class="text-weight-bolder" color="Navy" name="arrow_upward" />
                 </q-item-section>
@@ -52,7 +52,7 @@
             <!--Третий пример-->
 
             <q-separator size="0.5px" />
-            <q-item horizontal>
+            <q-item class="crm-list" horizontal>
                 <q-item-section avatar>
                     <q-icon class="text-weight-bolder" color="Navy" name="arrow_downward" />
                 </q-item-section>
@@ -73,7 +73,7 @@
 import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
-    name: 'SpisokSobit',
+    name: 'EventList',
 
     setup() {
         return {

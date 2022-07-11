@@ -2,9 +2,9 @@
     <q-card class="crm-panel q-my-lg" style="">
         <q-card-section horizontal>
 
-            <q-item>
+            <q-item class="crm-infopanel">
                 <q-item-section>
-                    <div class="text-h6">Заметка в 16:26(понедельник)</div>
+                    <div class="text-subtitle1">Заметка в 16:26(понедельник)</div>
                     <q-item-label caption>
                         16 мая 2022г.
                     </q-item-label>
@@ -12,7 +12,7 @@
 
                 </q-item-section>
 
-                <q-item-actions align="right" side top>
+                <q-item-actions class="q-pl-xl q-pr-none" align="right" side top>
                     <q-icon class="q-px-sm" size="20px" name="content_copy" />
                     <q-icon class="q-px-sm" size="20px" name="send" />
                     <q-icon class="q-px-sm" size="20px" name="grade" />
@@ -35,7 +35,7 @@
 
                 </q-item-section>
 
-                <q-item-actions align="right" side top>
+                <q-item-actions class="q-pl-xl q-pr-none" align="right" side top>
                     <q-icon class="q-px-sm" size="20px" name="content_copy" />
                     <q-icon class="q-px-sm" size="20px" name="send" />
                     <q-icon class="q-px-sm" size="20px" name="grade" />

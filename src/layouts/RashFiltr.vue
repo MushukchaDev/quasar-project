@@ -1,28 +1,29 @@
 <template>
     <div class="q-gutter-md" style="max-width: 300px">
 
-        <q-input outlined v-model="text" dense label="C" />
-        <q-input outlined v-model="text1" dense label="По" />
-        <q-input outlined v-model="text2" dense label="C" />
-        <q-input outlined v-model="text3" dense label="По" />
-        <q-input outlined v-model="text4" dense label="Ограничить кол-во" />
-        <q-input outlined v-model="text5" dense label="Имеет статус" />
-        <q-input outlined v-model="text6" dense label="Статус не равен" />
-        <q-select outlined v-model="modelMultiple" multiple :options="tags" dense use-chips stack-label options-dense
-            label="Имеет теги">
+        <q-input color="accent" v-model="text" dense label="C" />
+        <q-input color="accent" v-model="text1" dense label="По" />
+        <q-input color="accent" v-model="text2" dense label="C" />
+        <q-input color="accent" v-model="text3" dense label="По" />
+        <q-input color="accent" v-model="text4" dense label="Ограничить кол-во" />
+        <q-input color="accent" v-model="text5" dense label="Имеет статус" />
+        <q-input color="accent" v-model="text6" dense label="Статус не равен" />
+        <q-select color="accent" v-model="modelMultiple" multiple :options="tags" dense use-chips stack-label
+            options-dense label="Имеет теги">
         </q-select>
-        <q-select outlined v-model="modelMultiple1" multiple :options="tags" dense options-dense stack-label use-chips
-            label="Не имеет теги">
+        <q-select color="accent" v-model="modelMultiple1" multiple :options="tags" dense options-dense stack-label
+            use-chips label="Не имеет теги">
         </q-select>
 
-        <q-select outlined v-model="model" :options="pole_dati" dense options-dense label="Поле даты">
+        <q-select color="accent" v-model="model" :options="pole_dati" dense options-dense label="Поле даты">
         </q-select>
-        <q-select outlined v-model="model1" :options="sortirovat" dense options-dense label="Сортировать по"></q-select>
-        <q-select outlined v-model="modelMultiple2" multiple :options="tipi" dense stack-label options-dense use-chips
-            label="Типы событий">
+        <q-select color="accent" v-model="model1" :options="sortirovat" dense options-dense label="Сортировать по">
         </q-select>
-        <q-checkbox dense v-model="obrat_sort" label="Обратная сортировка" color="dark" />
-        <q-select outlined v-model="model2" :options="vibrat" dense options-dense label="Выбрать">
+        <q-select color="accent" v-model="modelMultiple2" multiple :options="tipi" dense stack-label options-dense
+            use-chips label="Типы событий">
+        </q-select>
+        <q-checkbox color="accent" dense v-model="obrat_sort" label="Обратная сортировка" />
+        <q-select color="accent" v-model="model2" :options="vibrat" dense options-dense label="Выбрать">
         </q-select>
     </div>
 </template>

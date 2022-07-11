@@ -8,16 +8,16 @@
 
                 <div class="row items-center q-pl-xs q-pb-xs">
                     <q-space />
-                    <q-btn icon="close" color="black" flat round dense v-close-popup />
+                    <q-btn icon="close" color="dark" flat round dense v-close-popup />
                 </div>
 
                 <div class="row items-center q-pl-xl q-pb-none">
                     <p>Редактировать контакт</p>
                 </div>
-                <q-tabs v-model="tab" dense class="text-brown-6 q-pl-md" :breakpoint="0" active-color="brown-10"
-                    indicator-color="brown-10" align="left">
-                    <q-tab name="osn" :class="tab == 'osn' ? 'text-black' : ''" label="Основная" />
-                    <q-tab name="tel" :class="tab == 'tel' ? 'text-black' : ''" label="Телефоны" />
+                <q-tabs v-model="tab" dense class="text-grey q-pl-md" :breakpoint="0" active-color="dark"
+                    indicator-color="dark" align="left">
+                    <q-tab name="osn" :class="tab == 'osn' ? 'text-dark' : ''" label="Основная" />
+                    <q-tab name="tel" :class="tab == 'tel' ? 'text-dark' : ''" label="Телефоны" />
 
                 </q-tabs>
                 <q-tab-panels v-model="tab" animated>
@@ -25,16 +25,17 @@
                         <div class="row items-center q-pl-xs q-pb-xs">
                             <div class="q-gutter-sm q-px-xs" style="max-width: 300px">
 
-                                <q-input v-model="text" label="Имя" placeholder="Как зовут?" stack-label dense />
-                                <q-input v-model="text" label="Организация" placeholder="Где работает?" stack-label
+                                <q-input color="accent" v-model="text1" label="Имя" placeholder="Как зовут?" stack-label
                                     dense />
-                                <q-input v-model="text" label="Должность" placeholder="Кем работает?" stack-label
-                                    dense />
+                                <q-input color="accent" v-model="text2" label="Организация" placeholder="Где работает?"
+                                    stack-label dense />
+                                <q-input color="accent" v-model="text3" label="Должность" placeholder="Кем работает?"
+                                    stack-label dense />
 
                                 <q-checkbox dense v-model="obrat_sort" stack-label label="Из адресной книги?"
-                                    color="dark-page" />
+                                    color="accent" />
                                 <q-checkbox dense v-model="obrat_sort2" stack-label label="Сохранить в новую версию"
-                                    color="dark-page" />
+                                    color="accent" />
 
 
                             </div>
@@ -66,8 +67,8 @@
                         </div>
                         <div class="row q-pl-md q-pb-xs items-center" style="width: 300px">
                             <div class="col">
-                                <q-input mask="(###) ### - ####" hint="(###) ### - ####" bottom-slots v-model="text"
-                                    label="Номер телефона" dense>
+                                <q-input color="accent" mask="(###) ### - ####" hint="(###) ### - ####" bottom-slots
+                                    v-model="text7" label="Номер телефона" dense>
 
                                     <template v-slot:append>
                                         <q-btn round dense flat icon="add" />
@@ -79,16 +80,19 @@
 
 
                 </q-tab-panels>
-                <div class="row items-center  q-pl-lg q-pb-xs q-mb-lg" style="max-width: 300px">
-                    <div class="q-gutter-sm q-px-xs" style="max-width: 300px">
-                        <q-btn :ripple="false" unelevated style="max-width: 80px" color="teal-4" label="Удалить"
-                            no-caps />
-                        <q-btn class="q-ml-ms" unelevated style="max-width: 80px" :ripple="false" color="teal-3"
-                            label="Сохранить" no-caps />
-                        <q-btn :ripple="false" unelevated style="max-width: 80px" outline color="teal-3" label="Закрыть"
-                            no-caps />
-                    </div>
-                </div>
+                <q-card-actions>
+                    <q-btn :ripple="false" label="Удалить" color="negative" />
+                    <q-space />
+                    <q-btn :ripple="false" class="bg-white text-dark" label="Закрыть" />
+                    <q-btn :ripple="false" label="Сохранить" color="accent" />
+
+                    <!--<q-btn :ripple="false" unelevated style="max-width: 80px" color="teal-4" label="Удалить" no-caps />
+                    <q-btn class="q-ml-ms" unelevated style="max-width: 80px" :ripple="false" color="teal-3"
+                        label="Сохранить" no-caps />
+                    <q-btn :ripple="false" unelevated style="max-width: 80px" outline color="teal-3" label="Закрыть"
+                        no-caps />-->
+
+                </q-card-actions>
             </q-card>
         </q-dialog>
     </div>

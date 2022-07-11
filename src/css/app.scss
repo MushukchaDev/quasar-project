@@ -18,7 +18,7 @@ p {
     font-size: large;
 }
 
-.q-item {
+.crm-list {
     min-height: 48px;
     padding: 15px 25px;
     color: inherit;
@@ -33,28 +33,26 @@ p {
     box-shadow: 0 1px 10px rgba(0,0,0,.1) inset;
   }
 
-.q-btn {
-border-radius: 2px ;}
-
 .text-h6 {
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 2rem;
     letter-spacing: 0.0125em;
 }
-/*
-.q-field--dense .q-field__label {
+
+/*.q-field--dense .q-field__label {
     font-size: 14px;
     top: -10px;
 }*/
-
+.q-layout{
+    background-color: #f1f3f6;
+}
 .q-field__control {
-    color: #34495e;
+    color: #3498db;
     height: 20px;
     max-width: 100%;
     outline: none;
 }
-
 .q-card {
     box-shadow: 0 1px 5px rgb(0 0 0 / 20%), 0 2px 2px rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%);
     border-radius: 4px;
@@ -81,6 +79,7 @@ border-radius: 2px ;}
     border-left: 5px solid green;
     border-radius: 0;
 }
+
 .crm-events-datelabel{
     background-color: #D3D3D3;
     min-height: 10px;
@@ -88,4 +87,23 @@ border-radius: 2px ;}
 }
 .crm-center-word {
     margin: 10px 4px 16px;
+}
+.crm-item{
+    max-height: 5px;
+    padding: 1px 1px;
+}
+.crm-expitem{
+    min-height: 10px;
+}
+.crm-menu .q-item{
+    min-height: 20px;
+    padding: 10px 15px;
+}
+.crm-infopanel {
+   
+    min-height: 48px;
+    padding: 15px 0px 15px 20px;
+    color: inherit;
+    transition: color 0.3s, background-color 0.3s;
+
 }
