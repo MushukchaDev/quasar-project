@@ -98,6 +98,8 @@ p {
 .crm-menu .q-item{
     min-height: 20px;
     padding: 10px 15px;
+    font-weight: 700;
+    font-size: 13px;
 }
 .crm-infopanel {
    
@@ -107,3 +109,18 @@ p {
     transition: color 0.3s, background-color 0.3s;
 
 }
+/*.q-btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+}*/

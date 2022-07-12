@@ -24,7 +24,7 @@
 
         <q-list>
             <q-item class="crm-events-datelabel">
-                <q-item-label>День</q-item-label>
+                <q-item-label class="text-grey-7">День</q-item-label>
             </q-item>
             <!--Первый пример-->
             <q-item class="crm-list" horizontal>
@@ -63,7 +63,11 @@
             </q-item>
         </q-list>
 
-
+        <q-btn label="Hover me" color="primary">
+            <q-tooltip>
+                Some text as content of Tooltip
+            </q-tooltip>
+        </q-btn>
 
     </q-card>
 </template>

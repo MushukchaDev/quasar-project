@@ -49,7 +49,7 @@
 
     <q-drawer v-model="drawer" show-if-above :width="200" :breakpoint="400">
       <q-scroll-area class="bg-dark-page" style="height: calc(100% - 200px); margin-top: 170px;">
-        <q-list padding class="crm-menu">
+        <q-list padding class="crm-menu text-grey-8">
 
           <q-item clickable active-class="q-item-no-link-highlighting">
             <q-item-section>
@@ -86,7 +86,7 @@
           <q-avatar size="56px" class="q-mb-sm">
             <img src="https://i.ibb.co/bzcmPP0/image.jpg">
           </q-avatar>
-          <div class="text-weight-bold text-dark">МАРИЯ ВЛАДИМИРОВНА</div>
+          <div class="text-weight-bold text-grey-8">МАРИЯ ВЛАДИМИРОВНА</div>
           <div>
             <q-select borderless dense options-dense v-model="model" :options="options2" />
           </div>
@@ -98,7 +98,7 @@
       <q-page padding horizontal>
         <div class="row">
           <div class="col= 'col-12 col-xl-6'">
-            <DannieCont />
+            <NewPage />
           </div>
         </div>
       </q-page>
@@ -117,10 +117,11 @@ import ZvonkiPanel from './Zvonki.vue'
 import FormaSobit from './FormaSobit.vue'
 import NomeraTel from './NomeraTel.vue'
 import DannieCont from './DannieCont.vue'
+import NewPage from './NewPage.vue'
 console.log(EventList)
 export default defineComponent({
   name: 'MainLayout',
-  components: { DannieCont },
+  components: { NewPage },
 
   setup() {
 

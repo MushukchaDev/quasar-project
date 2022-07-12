@@ -8,7 +8,7 @@
                     <q-item-label caption>
                         16 мая 2022г.
                     </q-item-label>
-                    <div class="text-subtitle3 q-pt-md">1к на 1 этаже за 2900</div>
+                    <div class="text-subtitle2 q-pt-md">1к на 1 этаже за 2900</div>
 
                 </q-item-section>
 
