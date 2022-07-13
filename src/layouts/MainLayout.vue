@@ -5,9 +5,11 @@
       <q-toolbar>
         <q-btn flat @click="drawer = !drawer" round dense icon="menu" class="text-dark"></q-btn>
         <q-toolbar-title class="text-dark">
-          <q-input borderless v-model="text" placeholder="Часть имени" />
+          <q-input style="max-width: 100px;" borderless v-model="text" placeholder="Часть имени" />
         </q-toolbar-title>
-
+        <q-separator vertical />
+        <q-btn class="text-black" stretch flat label="Link" />
+        <q-separator vertical />
       </q-toolbar>
     </q-header>
 

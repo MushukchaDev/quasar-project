@@ -25,7 +25,21 @@
                 <div class="text-body2">Hello "body2"</div>
             </q-card-section>
             <q-card-section>
-                <div class="text-overline">Hello "body2"</div>
+                <div class="text-overline">Hello "overline"</div>
+            </q-card-section>
+        </q-card>
+        <q-card>
+            <q-card-section>
+                <h3>Hello "h3"</h3>
+            </q-card-section>
+            <q-card-section>
+                <h4>Hello "h4"</h4>
+            </q-card-section>
+            <q-card-section>
+                <h5>Hello "h5"</h5>
+            </q-card-section>
+            <q-card-section>
+                <h6>Hello "h6"</h6>
             </q-card-section>
         </q-card>
     </div>
