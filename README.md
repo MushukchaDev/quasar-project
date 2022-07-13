@@ -1,2 +1,2 @@
 # quasar-project
- dlya typih
+
